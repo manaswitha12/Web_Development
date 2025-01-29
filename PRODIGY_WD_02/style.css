@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  background: #edeaff;
+  font-family: "Courier Prime", serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.stopwatch {
+  width: 90%;
+  max-width: 600px;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.stopwatch h1 {
+  margin-top: 20px;
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons img {
+  width: 60px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buttons img:hover {
+  transform: scale(1.1);
+}
+
+.laps {
+  margin-top: 20px;
+  text-align: center;
+  max-height: 200px;
+  overflow-y: auto; /* Scroll for lap times if they exceed height */
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.laps li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding-left: 20px;
+}
